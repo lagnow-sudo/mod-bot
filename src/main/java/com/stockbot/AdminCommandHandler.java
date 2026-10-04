@@ -123,7 +123,7 @@ public final class AdminCommandHandler extends ListenerAdapter {
     }
 
     @Override
-    public void onCommandAutoComplete(CommandAutoCompleteInteractionEvent e) {
+    public void onCommandAutoCompleteInteraction(CommandAutoCompleteInteractionEvent e) {
         if (!e.getName().equals("event-trigger") || !e.getFocusedOption().getName().equals("target")
                 || e.getGuild() == null) {
             return;
