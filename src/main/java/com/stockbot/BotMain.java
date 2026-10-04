@@ -58,7 +58,7 @@ public final class BotMain {
 
         // ---- JDA -----------------------------------------------------------
         JDA jda = JDABuilder.createLight(token,
-                        EnumSet.of(GatewayIntent.GUILDS, GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT))
+                        EnumSet.of(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT))
                 .setActivity(Activity.watching("the market 📈"))
                 .addEventListeners(
                         new MessageActivityListener(db, antiSpam, stocks, events),
